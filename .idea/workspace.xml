@@ -15,6 +15,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unittests in test_common.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="mongodb-cli" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_common.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in test_common.py" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -26,5 +48,43 @@
       <updated>1597729587256</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597730307326">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1597730307326" />
+    <state x="627" y="298" key="FileChooserDialogImpl" timestamp="1597730640165">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="627" y="298" key="FileChooserDialogImpl/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1597730640165" />
+    <state width="1659" height="280" key="GridCell.Tab.0.bottom" timestamp="1597730783535">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1597730783535" />
+    <state width="1659" height="280" key="GridCell.Tab.0.center" timestamp="1597730783534">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="280" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1597730783534" />
+    <state width="1659" height="280" key="GridCell.Tab.0.left" timestamp="1597730783534">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="280" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1597730783534" />
+    <state width="1659" height="280" key="GridCell.Tab.0.right" timestamp="1597730783535">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="280" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1597730783535" />
+    <state x="349" y="175" key="SettingsEditor" timestamp="1597730733842">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="349" y="175" key="SettingsEditor/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1597730733842" />
+    <state x="541" y="248" width="598" height="576" key="find.popup" timestamp="1597730898342">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="541" y="248" width="598" height="576" key="find.popup/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1597730898342" />
+    <state x="570" y="455" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597730587307">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="570" y="455" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1597730587307" />
   </component>
 </project>
