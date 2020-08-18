@@ -68,12 +68,12 @@ class MongoFilters(dict):
 
 
 class MongoBasicClient:
-    def __init__(self, host, db_name, db_list_name):
-        self.user = "pythontest"
-        self.password = "pythontest"
+    def __init__(self, host, db_name, db_list_name, user= "pythontest", password= "pythontest"):
+        self.user = user
+        self.password = password
         self.host = host
         self.db_name = db_name
-        self.ObjClient = MongoClient(host=f"mongodb+srv://{self.user}:{self.password}@{host}/{db_name}?retryWrites=true&w=majority")
+        self.ObjClient = self.init_client()
         self.SelectedDB = self.ObjClient[db_name]
         self.SelectedList = self.SelectedDB[db_list_name]
         self._date_fmt = "%Y/%m/%d %H:%M:%S"
@@ -89,19 +89,7 @@ class MongoBasicClient:
         return insert_result
 
     def insert_multi(self, vals: [dict]):
-        default = {
-            "uuid": str(uuid4()),
-            "created": datetime.datetime.now().strftime(self._date_fmt),
-            "updated": datetime.datetime.now().strftime(self._date_fmt)
-        }
-        new_vals = list()
-        for val in vals:
-            val.update(default)
-            new_vals.append(val)
-
-
-        insert_result: InsertManyResult = self.SelectedList.insert_many(documents=new_vals)
-        return insert_result
+        raise NotImplementedError
 
     def query(self,projection: dict = None,limit: int = 0, **kwargs):
 
@@ -140,10 +128,13 @@ class MongoBasicClient:
             self.ObjClient.close()
         self.user = account
         self.password = pws
-        self.ObjClient = MongoClient(host=f"mongodb+srv://{self.user}:{self.password}@{self.host}/{self.db_name}?retryWrites=true&w=majority")
+        self.ObjClient = self.init_client()
 
     def select_list(self,name):
         self.SelectedList = self.SelectedDB[name]
+
+    def init_client(self):
+        return MongoClient(host=f"mongodb+srv://{self.user}:{self.password}@{self.host}/{self.db_name}?retryWrites=true&w=majority")
 
     ##
     def __enter__(self):
@@ -152,3 +143,11 @@ class MongoBasicClient:
     def __exit__(self, exc_type, exc_val, exc_tb):
 
         self.ObjClient.close()
+
+    def __str__(self):
+        return str(self.__json__())
+
+    def __json__(self):
+        return {i: str(self.__getattribute__(i)) for i in self.__dir__() if not i.startswith("_")}
+
+
